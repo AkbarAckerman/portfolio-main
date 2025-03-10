@@ -6,21 +6,19 @@ import { JobImages } from "@/components/JobImages";
 const jobs = [
     {
         role: "Backend Development Intern (Python)",
-        company: "Udevs",
-        logo: "/udevs-logo.png", // Replace with actual logo
-        duration: "Mar 2025 - Present",
+        company: "Udevs · Internship",
+        logo: "/u-devs.jpg", // Replace with actual logo
+        duration: "Mar 2025 - Present · 1 mo",
         description:
             "Working on backend development tasks, improving API performance, and collaborating on remote projects.",
         link: "https://udevs.io", // Replace with actual company link if available
-        images: [
-            "/u-devs.jpg",
-        ],
+        images: [],
     },
     {
-        role: "Founder & Leader",
-        company: "Goldendevs",
+        role: "Founder & Leader | Goldendevs",
+        company: "Goldendevs · Self-employed",
         logo: "/golden-devs.jpg", // Replace with actual logo
-        duration: "Mar 2025 - Present",
+        duration: "Mar 2025 - Present · 1 mo",
         description:
             "Founded and lead Goldendevs, a volunteer-driven developer community that builds and launches MVP SaaS solutions. Empowering developers through hands-on projects and collaboration.",
         link: "https://goldendevs.com", // Replace with actual community link
