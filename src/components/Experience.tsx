@@ -26,7 +26,7 @@ const jobs = [
             "Founded and lead Goldendevs, a volunteer-driven developer community that builds and launches MVP SaaS solutions. Empowering developers through hands-on projects and collaboration.",
         skills: "Community building, Technical Leadership + 7 skills",
         link: "https://goldendevs.com",
-        images: [],
+        images: ["/devuzcommnunity.jpg"],
         extraContent: {
             title: "Signup for Goldendevs community",
             description:
