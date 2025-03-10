@@ -26,7 +26,7 @@ const jobs = [
             "Founded and lead Goldendevs, a volunteer-driven developer community that builds and launches MVP SaaS solutions. Empowering developers through hands-on projects and collaboration.",
         skills: "Community building, Technical Leadership + 7 skills",
         link: "https://goldendevs.com",
-        images: ["/devuzcommnunity.jpg"],
+        images: [],
         extraContent: {
             title: "Signup for Goldendevs community",
             description:
@@ -65,7 +65,14 @@ export const Experience = () => {
                                 {j.location && <p className="text-xs text-muted-foreground mt-1">{j.location}</p>}
                                 {j.extraInfo && (
                                     <p className="text-xs text-muted-foreground mt-1 flex items-center">
-                                        <Linkedin className="size-3 mr-2" /> {j.extraInfo}
+                                        <Image 
+                                            src="/linkedin_icon.png"  // Replace with the correct path
+                                            alt="LinkedIn"
+                                            width={16}
+                                            height={16}
+                                            className="mr-2"
+                                        /> 
+                                        {j.extraInfo}
                                     </p>
                                 )}
                                 <p className="text-sm mt-2">{j.description}</p>
