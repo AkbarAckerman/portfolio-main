@@ -1,54 +1,39 @@
 import Image from "next/image";
-
 import { CalendarDays } from "lucide-react";
-
 import { Card, CardContent } from "@/components/ui/card";
-
 import { JobImages } from "@/components/JobImages";
 
 const jobs = [
     {
-        role: "Senior Full-Stack Developer", // TODO: Replace with actual role
-        company: "Tech Innovators Inc.", // TODO: Replace with actual company name
-        logo: "/company.svg", // TODO: Replace with actual logo
-        duration: "2020 - Present",
+        role: "Backend Development Intern (Python)",
+        company: "Udevs",
+        logo: "/udevs-logo.png", // Replace with actual logo
+        duration: "Mar 2025 - Present",
         description:
-            "Lead developer for multiple high-impact projects, mentoring junior developers, and implementing best practices.",
-        link: "https://techinnovators.com",
-        images: [],
-    },
-    {
-        role: "Senior Full-Stack Developer", // TODO: Replace with actual role
-        company: "Tech Innovators Inc.", // TODO: Replace with actual company name
-        logo: "/company.svg", // TODO: Replace with actual logo
-        duration: "2018 - 2020",
-        description:
-            "Developed and maintained various client projects, focusing on responsive design and performance optimization.",
-        link: "https://websolutions.com",
+            "Working on backend development tasks, improving API performance, and collaborating on remote projects.",
+        link: "https://udevs.io", // Replace with actual company link if available
         images: [
-            "/devvault.png",
-            "/devvault.png",
+            "/u-devs.jpg",
         ],
     },
     {
-        role: "Senior Full-Stack Developer", // TODO: Replace with actual role
-        company: "Tech Innovators Inc.", // TODO: Replace with actual company name
-        logo: "/company.svg", // TODO: Replace with actual logo
-        duration: "2016 - 2018",
+        role: "Founder & Leader",
+        company: "Goldendevs",
+        logo: "/golden-devs.jpg", // Replace with actual logo
+        duration: "Mar 2025 - Present",
         description:
-            "Assisted in the development of web applications, gained experience in agile methodologies and version control.",
-        link: "https://startupventures.com",
+            "Founded and lead Goldendevs, a volunteer-driven developer community that builds and launches MVP SaaS solutions. Empowering developers through hands-on projects and collaboration.",
+        link: "https://goldendevs.com", // Replace with actual community link
         images: [
-            "/devvault.png",
-            "/devvault.png",
+            "/devuzcommnunity.jpg", // Replace with relevant images
         ],
     },
-]
+];
 
 export const Experience = () => {
     return (
         <>
-           <h2 className="text-xl font-bold mb-4 text-black dark:text-white">Work Experience</h2>
+            <h2 className="text-xl font-bold mb-4 text-black dark:text-white">Work Experience</h2>
             <Card>
                 <CardContent className="pt-6">
                     <ul className="space-y-8">
@@ -64,31 +49,22 @@ export const Experience = () => {
                                         className="rounded-md border shadow-md object-cover"
                                     />
                                     <div>
-                                        <h3 className="font-semibold">
-                                            {j.role}
-                                        </h3>
-                                        <p className="text-sm text-muted-foreground">
-                                            {j.company}
-                                        </p>
+                                        <h3 className="font-semibold">{j.role}</h3>
+                                        <p className="text-sm text-muted-foreground">{j.company}</p>
                                     </div>
                                 </div>
                                 <p className="text-xs text-muted-foreground mt-2 flex items-center">
-                                    <CalendarDays className="size-3 mr-2"/>
+                                    <CalendarDays className="size-3 mr-2" />
                                     {j.duration}
                                 </p>
                                 <p className="text-sm mt-2">{j.description}</p>
                                 {/* Job Images */}
-                                <JobImages 
-                                    role={j.role} 
-                                    link={j.link}
-                                    images={j.images} 
-                                    duration={j.duration} 
-                                />
+                                <JobImages role={j.role} link={j.link} images={j.images} duration={j.duration} />
                             </li>
                         ))}
                     </ul>
                 </CardContent>
             </Card>
         </>
-    )
-}
+    );
+};
