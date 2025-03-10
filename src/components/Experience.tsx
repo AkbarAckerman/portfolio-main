@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, Linkedin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { JobImages } from "@/components/JobImages";
 
@@ -65,14 +65,7 @@ export const Experience = () => {
                                 {j.location && <p className="text-xs text-muted-foreground mt-1">{j.location}</p>}
                                 {j.extraInfo && (
                                     <p className="text-xs text-muted-foreground mt-1 flex items-center">
-                                        <Image 
-                                            src="/linkedin_icon.png"  // Replace with the correct path
-                                            alt="LinkedIn"
-                                            width={16}
-                                            height={16}
-                                            className="mr-2"
-                                        /> 
-                                        {j.extraInfo}
+                                        <Linkedin className="size-3 mr-2" /> {j.extraInfo}
                                     </p>
                                 )}
                                 <p className="text-sm mt-2">{j.description}</p>
